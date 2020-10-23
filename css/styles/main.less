@@ -1,0 +1,109 @@
+@background_body: #FAFAD2;
+@border_color: #FF6600;
+@background_error: #99FF99;
+@superb_gray: #989A99;
+
+body{
+    background-color: @background_body;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .container{
+        .row{
+            .logo_box{
+                width: 100%;
+                justify-content: space-between;
+                display: flex;
+                .logo{
+                    font-size: 30px;
+                    .text_logo{
+                        margin-right: 30px;
+                    }
+                }
+                .login_redirect{
+                    color: white;
+                    .login_redirect_box{
+                        display: inline-block;
+                        float: right;
+                        margin: auto;
+                    }
+                }
+                .user{
+                    margin-top: 5px;
+                    .user_icon{
+                        font-size: 35px;
+                        margin-top: -10px;
+                        margin-right: 20px;
+                        color: @superb_gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.message_section{
+    .container{
+        .row{
+            .message_box{
+                min-height: 50px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                .message{
+                    display: inline-block;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    .footer_box{
+        margin-bottom: 50px;
+        .footer_content{
+            text-align: center;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 576px){
+    header{
+        .container{
+            .row{
+                .logo_box{
+                    display: block;
+                    justify-content: center;
+                    .logo{
+                        justify-content: center;
+                        margin-bottom: 20px;
+                    }
+                    .login_redirect{
+                        justify-content: center;
+                        .login_redirect_box{
+                            float: none;
+                            margin: auto;
+                            display: block;
+                            justify-content: center;
+                            text-align: center;
+                        }
+                        .user{
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

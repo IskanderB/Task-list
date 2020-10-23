@@ -1,0 +1,80 @@
+body {
+    background-color: #fafad2;
+
+}
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+header .container .row .logo_box {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+header .container .row .logo_box .logo {
+  font-size: 30px;
+}
+header .container .row .logo_box .logo .text_logo {
+  margin-right: 30px;
+}
+header .container .row .logo_box .login_redirect {
+  color: white;
+}
+header .container .row .logo_box .login_redirect .login_redirect_box {
+  display: inline-block;
+  float: right;
+  margin: auto;
+}
+header .container .row .logo_box .user {
+  margin-top: 5px;
+}
+header .container .row .logo_box .user .user_icon {
+  font-size: 35px;
+  margin-top: -10px;
+  margin-right: 20px;
+  color: #989a99;
+}
+.message_section .container .row .message_box {
+  min-height: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.message_section .container .row .message_box .message {
+  display: inline-block;
+  margin-top: 12px;
+}
+footer .footer_box {
+  margin-bottom: 50px;
+}
+footer .footer_box .footer_content {
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  header .container .row .logo_box {
+    display: block;
+    justify-content: center;
+  }
+  header .container .row .logo_box .logo {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  header .container .row .logo_box .login_redirect {
+    justify-content: center;
+  }
+  header .container .row .logo_box .login_redirect .login_redirect_box {
+    float: none;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  header .container .row .logo_box .login_redirect .user {
+    justify-content: center;
+  }
+}
